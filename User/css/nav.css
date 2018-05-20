@@ -1,0 +1,734 @@
+*
+{
+	box-sizing:border-box;
+	margin:0px;
+	padding:0px;
+}
+.firstdiv
+{
+	background:url("../images/2.jpg") 0px 0px no-repeat;
+	height:100%;
+	width:100%;	
+}
+
+.mainheading
+{
+	position:absolute;
+	margin-top:6%;
+	margin-left:36%;
+	color:#fff;
+	font-size:20px;
+	text-shadow:3px 3px black;
+}
+.hede1
+{
+	position:fixed; 
+	width:100%;
+	margin-bottom:70%;
+}
+/*Menubar*/
+.main-nav
+{
+	
+	height:80px;
+	display:flex;
+	justify-content:flex-left;
+	align-items:center;
+	background: #26BAC8;
+	width:100%;
+}
+.menu
+{
+	margin-top:5px;
+	padding:0;
+	list-style:none;
+	display:flex;
+	opacity:0;
+	visibility:hidden;
+	
+}
+
+.menu_item
+{
+	margin-left:110px;
+	
+}
+.menu-bar
+{
+	width:30px;
+	margin-left:5px;
+	margin-top:5px;
+	cursor:pointer;
+}
+
+.fline,.sline,.tline
+{
+	width:100%;
+	background:black;
+	height:3px;
+	transition:all 0.5s;
+}
+.sline
+{
+	margin:5px 0;
+}
+.mostrar .sline
+{
+	opacity:0;
+}
+.mostrar  .fline
+{
+	transform:rotate(45deg) translate(5px, 5px); 
+}
+.mostrar   .tline
+{
+	transform:rotate(-45deg) translate(6px,-7px);
+}
+.mostrar  .menu
+{
+	visibility:visible;
+	opacity:1;
+}
+/*menu effect*/
+.menu a span 
+	{
+		
+		font-size: 20px;
+		color: black;
+		position: relative;
+		display: inline-block;
+		padding: 6px 6px;
+		background:transparent;
+		box-shadow: inset 0 3px rgb(231, 233, 234);
+		-webkit-transition: background 0.6s;
+		-moz-transition: background 0.6s;
+		transition: background 0.6s;
+		-webkit-transform-origin: 50% 0;
+		-moz-transform-origin: 50% 0;
+		transform-origin: 50% 0;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		-webkit-transform-origin: 0% 50%;
+		-moz-transform-origin: 0% 50%;
+		transform-origin: 0% 50%;
+	}
+.menu a span::before
+	{
+		padding: 6px 6px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: pink;
+		color: #2f4351;
+		content: attr(data-hover);
+		-webkit-transform: rotateX(270deg);
+		-moz-transform: rotateX(270deg);
+		transform: rotateX(270deg);
+		-webkit-transition: -webkit-transform 0.6s;
+		-moz-transition: -moz-transform 0.6s;
+		transition: transform 0.6s;
+		-webkit-transform-origin: 0 0;
+		-moz-transform-origin: 0 0;
+		transform-origin: 0 0;
+		pointer-events: none;
+}
+.menu a:hover span,
+.menu a:focus span {
+	background: #2f4351;
+}
+.menu a:hover span::before,
+.menu a:focus span::before {
+	-webkit-transform: rotateX(10deg);	
+	-moz-transform: rotateX(10deg);
+	transform: rotateX(10deg);
+}
+
+/*services*/
+.services
+{
+	height:100%;
+	width:100%;
+}
+h3
+{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 3em;
+    text-align: center;
+    color: #E64B3B;
+    font-weight: 200;
+    position: relative;
+}
+
+.firc,.srcc,.trss
+{
+	height:450px;
+	width:300px;
+	float:left;
+	margin-left:100px;
+	margin-top:5%;
+}
+h1,p
+{
+	
+	font-family: 'Fugaz One', cursive;
+	text-align:center;
+}
+img
+{
+	height:25%;
+	width:40%;
+	margin-left:35%;
+}
+/*Thanks part*/
+section.footer {
+	background-color:#222;
+	padding: 60px 0 50px;
+	color:#fff;
+
+}
+.text-center
+{
+	font-size:30px;
+	font-weight:500;
+	padding-bottom: 10px;
+	text-transform:uppercase;
+	text-align:center;
+}
+
+.foter1,.foter2,.foter3
+{
+	height:50%;
+	width:25%;
+	margin-left:6%;
+	display:inline-block;
+}
+.foter1 h2,.foter2 h2,.foter3 h2
+{
+	font-size:25px;
+	font-family: 'Montserrat', sans-serif;
+	text-align:center;
+	margin-top:20%;
+	
+}
+.newslettermail
+{
+	outline:none;
+	background:rgba(2, 2, 2, 0.60);
+	color: #fff;
+	border:none;
+	border-radius: 3px;
+	font-size:16px;
+	width: 80%;
+	height:15%;
+	margin-top:5%;
+	margin-left:10%;
+	padding-left:5%;
+}
+
+
+/*footer*/
+.copy-right {
+    padding: 1.5em 0em;
+    text-align: center;
+    background: #1A2F28;
+
+}
+.copy-right p {
+    font-size: 1em;
+    color: #fff;
+}
+/* serach area css*/
+.searchbus1
+{
+	margin-left:400px;
+	margin-top:50px;
+	
+}
+.searchmain1
+{
+	height:70%;
+	
+}
+.sbtn
+{
+	margin-left:40%;
+	font-size: 15px;
+	background-color:#34ad00;
+	border-radius:2px;
+	height:35px;
+	width:250px;
+	color: #fff;
+	border:none;
+}
+.sbtn:hover
+{
+	margin-left:40%;
+	font-size: 15px;
+	background-color:#1f8dd6;
+	border-radius:2px;
+	height:35px;
+	width:250px;
+	color: #fff;
+	border:none;
+}
+.bs table
+{
+	
+	width:100%;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.bs th {
+   
+	background-color: #d1c4e9;
+	height:60px;
+	
+	
+}
+.bs tr:nth-child(even) {
+	background-color: #f2f2f2;
+	text-align:center;
+	
+}
+.bs td
+{
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+/* About Us */
+.abtus
+{
+    font-size: 3em;
+    text-align: center;
+    color: #E64B3B;
+    font-weight: 200;
+    position: relative;
+    margin-bottom: 1.2em;
+    padding-bottom: 0.3em;
+	padding-top:5%;
+	font-family:'Fugaz One', cursive;
+}
+.abtus1
+{
+	font-size: 1.1em;
+    color: #555;
+    line-height: 2em;
+    text-align: center;
+	padding-bottom:10%;
+}
+.abtus3
+{
+	height:3px;
+	width:80px;
+	background-color:#F6D13B;
+	margin-left:48%;
+	margin-top:-5%;
+}
+/* header of main page*/
+.ma1
+{
+	height:2%;
+	width:100%;
+	background-color:black;
+}
+.ma2
+{
+	height:20%;
+	width:100%;
+	background: linear-gradient(#ED953D, #F8CFA6);
+	float:left;
+}
+.ma2 h1
+{
+	color:#fff;
+	font-size:60px;
+	margin-top:-8%;
+	margin-right:30%;
+	text-shadow: 3px 3px 3px black;
+}
+.ma2 img
+{
+	height:100%;
+	width:10%;
+	margin-left:10px;
+}
+.ma21
+{
+	margin-left:60%;
+	font-size:25px;
+	color:black;
+	text-shadow:none;
+	float:right;
+	margin-top:-100px;
+	margin-right:10px;
+}
+.ma21 h1
+{
+	font-size:24px;
+}
+
+.ma4
+{
+	height:8%;
+	width:100%;
+	background-color:#FCA301;
+	
+	
+}
+.ma4 ol
+{
+	margin-top: 15px;
+	margin-left:20px;
+    position: absolute;
+	font-size:20px;
+}
+.ma4 ol li
+{
+    display: inline;
+    color: black;
+    margin-left: 18px;
+    padding: 10px 15px 10px 25px;   
+}
+.ma4 ol li ol
+{  
+    display: none;
+	font-size:18px;
+}
+.ma4 ol li:hover ol
+{
+    display: inherit;
+    margin-left: -190px;
+    margin-top: 25px;
+	position:absolute;
+}
+.ma4 ol li:hover ol li
+{
+    background-color:#FCA301;
+    display: block;
+    width: 200px;
+	padding: 5px 15px 5px 10px;
+	text-align: center;
+}
+
+.ma4 li
+{
+	list-style:none;
+	display:inline;
+	padding-left:15px;
+	padding-bottom:-5%;
+	
+}
+.ma4 li a:hover
+{
+	color:white;
+}
+.ma4 ol li ol li a:hover
+{
+	color:white;
+}
+.ma4 a
+{
+	text-decoration:none;
+	color:black;
+}
+.ma4 ol :active { 
+    background-color: red;
+
+}
+
+/*
+ contact us*/
+
+.cont1
+{
+	height:100%;
+	width:100%;
+	background: linear-gradient(#99FF99, #fff);
+}
+.cont2 input[type="text"]
+{
+	
+	outline:none;
+    font-size:18px;
+	font-family:Nunito-Light;
+	color: black;
+	padding: 15px 15px;
+	border:none;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	width: 30%;
+    margin: 0 0 15px 0 ;
+	background:rgba(2, 2, 2, 0.40);
+	margin-top:5%;
+	margin-left:2%;
+	
+	
+}
+.cont2 textarea
+{
+	outline:none;
+    font-size:18px;
+	font-family:Nunito-Light;
+	color: black;
+	padding: 15px 10px;
+	border:none;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	width: 40%;
+    margin: 0 0 15px 0 ;
+	background:rgba(2, 2, 2, 0.40);
+	margin-top:2%;
+	margin-left:30%;
+}
+.cont2 input[type="submit"]
+{
+	margin-left:42%;
+	margin-top:4%;
+	margin-bottom:8%;
+	font-size: 15px;
+	background-color:#34ad00;
+	border-radius:2px;
+	height:35px;
+	width:250px;
+	color: #fff;
+	border:none;
+}
+.cont2 input[type="submit"]:hover
+{
+	margin-left:42%;
+	margin-top:4%;
+	margin-bottom:8%;
+	font-size: 15px;
+	background-color:#1f8dd6;
+	border-radius:2px;
+	height:35px;
+	width:250px;
+	color: #fff;
+	border:none;
+}
+/* password change page*/
+.fspasschange
+{
+	height:70%;
+	width:80%;
+	margin-top:80px;
+	margin-left:150px;
+	font-size:20px;
+	border-radius:9px;
+	border-color:#955B29;
+	margin-bottom:80px;
+}
+.passchange
+{
+	margin-top:50px;
+	height:10px;
+	width:80%;
+	margin-left:140px;
+}
+.passchange th,.reservationtable th,.buspass th
+{
+
+	padding-top:15px;
+	padding-left:10px;
+	font-size:18px;
+	font-family:Nunito-Light;
+	background-color:#fff;
+	color:black;
+}
+.passchange tr,.reservationtable tr,.buspass tr
+{
+	
+	display:inherit;
+	padding-top:25px;
+	
+}
+.passchange input[type="text"],.passchange input[type="password"],.passchange input[type="date"]
+{
+	height:30px;
+	width:300px;
+	margin-left:-40px;
+
+}
+.passchange input[type="submit"],.reservationtable input[type="submit"]
+{
+	margin-top:15%;
+	margin-left:50%;
+
+}
+/* Update Profile*/
+.updateprofile
+{
+	height:100%;
+	width:80%;
+	margin-top:80px;
+	margin-left:150px;
+	font-size:20px;
+	border-radius:9px;
+	border-color:#955B29;
+	margin-bottom:80px;
+}
+textarea
+{
+	display:inherit;
+	padding-top:25px;
+	
+}
+/*welcome page*/
+.fnotification
+{
+	height:60%;
+	width:20%;
+	margin-top:80px;
+	margin-left:20px;
+	font-size:20px;
+	border-radius:9px;
+	border-color:#955B29;
+	margin-bottom:80px;
+	
+}
+.fnotification1
+{
+	height:50%;
+	width:80%;
+	margin-top:80px;
+	margin-left:20px;
+	font-size:20px;
+	border-radius:9px;
+	border-color:#955B29;
+	margin-bottom:80px;
+}
+/*Reservation*/
+.bus_reservation_field1
+{
+	height:50%;
+	width:80%;
+	margin-top:80px;
+	margin-left:150px;
+	font-size:20px;
+	border-radius:9px;
+	border-color:#955B29;
+	margin-bottom:80px;
+	display:block;
+		
+}
+.bus_reservation_field2
+{
+	height:70%;
+	width:80%;
+	margin-top:80px;
+	margin-left:150px;
+	font-size:20px;
+	border-radius:9px;
+	border-color:#955B29;
+	margin-bottom:80px;
+	display:none;
+		
+}
+
+/*Bus Pass*/
+.buspass_field1
+{
+	height:90%;
+	width:80%;
+	margin-top:80px;
+	margin-left:150px;
+	font-size:20px;
+	border-radius:9px;
+	border-color:#955B29;
+	margin-bottom:80px;
+	display:block;
+		
+}
+.buspass_field
+{
+	height:70%;
+	width:80%;
+	margin-top:80px;
+	margin-left:150px;
+	font-size:20px;
+	border-radius:9px;
+	border-color:#955B29;
+	margin-bottom:80px;
+	display:none;
+}
+
+.buspass
+{
+	margin-left:220px;
+	margin-top:30px;
+	height:100%;
+}
+.buspass_edu
+{
+	margin-left:220px;
+	margin-top:30px;
+	height:60%;
+}
+.buspass_route
+{
+	margin-left:220px;
+	margin-top:30px;
+	height:70%;
+}
+.buspass td
+{
+	padding-left:40px;
+}
+.buspass input[type="text"],.buspass_edu input[type="text"],.buspass_route input[type="text"],.Renew_pass_table input[type="text"],.buspass input[type="email"],
+.Occasion_table input[type="number"],.Occasion_table input[type="time"],.Occasion_table input[type="text"],.Renew_pass_table input[type="date"],
+.buspass input[type="date"]
+{
+	height:30px;
+	width:300px;
+}
+.buspass_field1 input[type=submit],
+.buspass_field1 input[type=button],.bus_reservation_field1 input[type=button]{
+	width: 120px;
+	margin:-120px 0px 0px 150px;
+	padding: 5px;
+	height: 40px;
+	background-color: sienna;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	font-family: 'Droid Serif', serif;
+}
+.buspass_field input[type=submit],.buspass_field input[type=button]{
+	width: 120px;
+	margin-left:250px;
+	margin-top:20px;
+	padding: 5px;
+	height: 40px;
+	background-color: sienna;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	font-family: 'Droid Serif', serif;
+}
+.Renew_pass_table
+{
+	margin-left:350px;
+	margin-top:100px;
+	height:40%;
+}
+/*Occasional Booking*/
+.Occasion_table
+{
+	margin-left:300px;
+	margin-top:40px;
+	height:40%;	
+	padding:5px;
+}
+.Occasion_table th
+{
+	padding-top:18px;
+}
+
